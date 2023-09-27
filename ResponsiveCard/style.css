@@ -1,0 +1,118 @@
+body{
+    margin: 0;
+    
+}
+.container{
+    background-color: wheat;
+    height: 650px;
+    color: white
+    ;
+    display: flex;
+    justify-content: center; 
+
+    /* justify-content se card container ke center me aa gya 
+    but muje isko har taraf se center me lana hai to align-items ka use krna prta hai 
+    */
+    align-items: center;
+}
+
+.card{
+    background-color: white;
+    height: 400px;
+    width: 600px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.leftsideCard{
+    background-color: rgb(62, 62, 214);
+    width: 50%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.rightsideCard{
+    background-color:whitesmoke;
+    width: 50%;
+    border-radius: 20px;
+    color: black;
+    
+}
+
+
+.cardContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.score{
+    background-color: rgb(0, 19, 189);
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+.textmsg{
+    text-align: center;
+}
+
+.btntype{
+  margin: 20px;
+  
+  display: flex;
+  flex-direction: column;
+
+  
+  
+}
+.reaction{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    margin: 2px;
+    padding-left: 3px;
+    padding-right: 3px;
+
+    
+}
+
+.lastbtn{
+    background-color: black;
+    border-radius: 20px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+    /* Responsive Design for mobile */
+
+   
+@media screen and (max-width: 486px) {
+    .card {
+        flex-direction: column;
+        height: auto; 
+    }
+    .leftsideCard,
+    .rightsideCard {
+        width: 100%;
+    }
+    .score {
+        width: 100px;
+        height: 100px; 
+    }
+}
